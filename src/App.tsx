@@ -11,7 +11,7 @@ const routes = [
     element: <Section {...section} />,
   })),
   {
-    path: "/",
+    path: "*",
     element: <Index sections={sections} />,
   },
 ];

@@ -1,7 +1,9 @@
 import { InfoSection } from "./speedrun.models";
 
 export const getSectionPath = (section: InfoSection): string =>
-  `/${encodeURIComponent(section.name.replaceAll(" ", "-").toLowerCase())}`;
+  `/skate-speedruns/${encodeURIComponent(
+    section.name.replaceAll(" ", "-").toLowerCase()
+  )}`;
 
 type Console = "playStation" | "xbox";
 
