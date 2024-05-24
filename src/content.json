@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Getting Started",
+    "contentSections": [
+      {
+        "title": "Set up",
+        "description": "The first thing you will need in order to do a skate 2 speedrun is a console on which you can run the game, and if you want to submit the run a means of recording your game.\n In terms of consoles, there are several key differences. Modern playstations do not support skate 2, so the only playstation console which will support the game is the PS3. Alternatively, RPCS3 can be used, although will be hidden by default on the leaderboards, since it is not an official release of the game.\n All Xbox consoles since Xbox 360 support the game, however the game is no longer digitally for sale. This means that if your console does not support physical disks you will need to already have the digital game owned on your account in order to use it.\n Timing your run is not required, although may be useful as a tool. The time of the run can be calculated from the complete recording of the game. The recording must include the game audio and complete, unbroken footage of the game. You can achieve this either by using a capture card, or by directly recording the screen on which you're playing the game."
+      },
+      {
+        "title": "Game settings",
+        "description": "When setting up your character in the game, you can configure the character however you like. The time to set up the character does not count towards the run.\n It's recommended to turn off the music from within the audio settings, since the music within the game is copyrighted and some platforms for uploading the video will mute the audio. This isn't a requirement however as long as a full audio version of the run is available in some way to the moderators when verifying the run.\nYou can also update the camera angle, if you prefer high camera, before beginning the run."
+      }
+    ]
+  },
+  {
+    "name": "General Tips and Tricks",
+    "contentSections": [
+      {
+        "title": "Speed glitch",
+        "description": "There is one key speed glitch used within the skate 2 run, in order to achieve it you need to first pop a trick into the air (ideally an ollie). Once in the air, grab the board backside, this will be left trigger if in regular stance or right trigger if in goofy stance. Then press the %y% button to begin getting off the board (while still holding the trigger). As you begin to get off the board, you press %y% again to get back on the board in such a way that the board is angled as you contact the floor.",
+        "videoUrl": "https://www.youtube.com/embed/psaD5m4olRs?si=WwkoduYX1qV2uykq&amp;clip=Ugkx-IpkX5oyUwP1Qv-MMJFxPoh4V78HZYe0&amp;clipt=EMguGO91"
+      },
+      {
+        "title": "Tri-pushing",
+        "description": "Everyone knows that it takes three pushes to get to max speed, but did you know you can push quicker than just holding the %a% or %x% button? When we move the right analog stick with all other buttons neutral, our skater quickly gets into position ready to perform a trick. We can use this faster return to the neutral stance in between pushes to push at almost double the speed. As soon as you have gained the full benefit of a push, flick the analog stick to return to the neutral position and push again",
+        "videoUrl": "https://www.youtube.com/embed/psaD5m4olRs?si=54hwrbiuWMoVsiiM&amp;clip=UgkxorK8CxMWKJRi3M-elIeBPTxBAGiNbKKK&amp;clipt=EMbKIxjO8SM"
+      },
+      {
+        "title": "Fast Pause",
+        "description": "During the game, your game will save at multiple points. You can see that the game has saved because we get an orange spinner and a message saying 'saving content'. One of the most egregious cases of this from a speedrun perspective is after challenge completion. We will complete many challenges during the course of the speedrun, and while the spinner is saving we are not allowed to perform some actions; such as pausing the game.\nA way to circumvent this is to perform a fast pause. This trick is not yet particularly consistent, but the goal is to pause between a challenge ending and the pause spinner appearing. The window for this is extremely small, so requires very fast input between the %a% press to remove the challenge completion screen and the pause press. When it works, you will be in the menu while the save spinner saves the game.",
+        "videoUrl": "https://www.youtube.com/embed/psaD5m4olRs?si=_MD2xsDC-PJRXTv-&amp;clip=UgkxAwMmtYNZ37RFho74T7DtlDDyOSqXYhiV&amp;clipt=EKf9Ihis1yM"
+      }
+    ]
+  }
+]

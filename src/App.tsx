@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Index } from "./components/Index";
+import { Section } from "./components/Section";
+import { RouterProvider, createHashRouter } from "react-router-dom";
+import { getSectionPath } from "./utils";
+import sections from "./content.json";
+
+const routes = [
+  ...sections.map((section) => ({
+    path: getSectionPath(section),
+    element: <Section {...section} />,
+  })),
+  {
+    path: "/",
+    element: <Index sections={sections} />,
+  },
+];
+
+const router = createHashRouter(routes);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Expired Data's Skate 2 Speedrun guide</h1>
+      <RouterProvider router={router} />
     </div>
   );
 }
