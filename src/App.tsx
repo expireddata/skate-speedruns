@@ -16,13 +16,13 @@ const routes = [
   },
 ];
 
-const router = createHashRouter(routes);
+const router = createHashRouter(routes, { basename: "/skate-speedruns" });
 
 function App() {
   return (
     <div className="App">
       <h1>Expired Data's Skate 2 Speedrun guide</h1>
-      <RouterProvider router={router} baseName="/skate-speedruns" />
+      <RouterProvider router={router} />
     </div>
   );
 }
