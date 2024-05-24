@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <h1>Expired Data's Skate 2 Speedrun guide</h1>
-      <RouterProvider router={router} />
+      <RouterProvider router={router} baseName="/skate-speedruns" />
     </div>
   );
 }
