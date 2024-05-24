@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2dc3a61e.css",
+    "main.js": "/static/js/main.e7a1b39e.js",
+    "static/media/promptfont.ttf": "/static/media/promptfont.d0a1e551768f1a6c4e02.ttf",
+    "index.html": "/index.html",
+    "main.2dc3a61e.css.map": "/static/css/main.2dc3a61e.css.map",
+    "main.e7a1b39e.js.map": "/static/js/main.e7a1b39e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2dc3a61e.css",
+    "static/js/main.e7a1b39e.js"
+  ]
+}
