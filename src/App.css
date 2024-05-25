@@ -36,6 +36,14 @@ html {
    display: flex;
    justify-content: space-around;
   }
+  
+  .main-content { 
+    padding-bottom: 10vh;
+  }
+
+  .paragraph { 
+    width: 90vw;
+  }
 }
 
 
