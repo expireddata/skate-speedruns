@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/skate-speedruns/static/css/main.9f6a5214.css",
-    "main.js": "/skate-speedruns/static/js/main.a9db3e32.js",
+    "main.css": "/skate-speedruns/static/css/main.aef6e601.css",
+    "main.js": "/skate-speedruns/static/js/main.9f2552de.js",
     "static/media/promptfont.ttf": "/skate-speedruns/static/media/promptfont.d0a1e551768f1a6c4e02.ttf",
     "index.html": "/skate-speedruns/index.html",
-    "main.9f6a5214.css.map": "/skate-speedruns/static/css/main.9f6a5214.css.map",
-    "main.a9db3e32.js.map": "/skate-speedruns/static/js/main.a9db3e32.js.map"
+    "main.aef6e601.css.map": "/skate-speedruns/static/css/main.aef6e601.css.map",
+    "main.9f2552de.js.map": "/skate-speedruns/static/js/main.9f2552de.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f6a5214.css",
-    "static/js/main.a9db3e32.js"
+    "static/css/main.aef6e601.css",
+    "static/js/main.9f2552de.js"
   ]
 }
