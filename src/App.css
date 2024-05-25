@@ -117,13 +117,18 @@ iframe {
   .logo { 
     margin: 2vh 0 10vh 0;
     display: block;
+    padding: 1rem;
   }
 
   
-  .link-item:hover, .link-item-selected { 
+  .link-item:hover > div, .link-item-selected > div { 
     background-color: #AC8968; 
     box-shadow: 0 0 15px rgba(0,0,0,0.75);
     clip-path: inset(0px -15px 0px 0px);
+  }
+
+  .link-item > div { 
+    padding: 1rem;
   }
 }
 
@@ -149,10 +154,10 @@ iframe {
     box-shadow: 0 0 15px rgba(0,0,0,0.75);
     clip-path: inset(-15px 0px 0px 0px);
   }
-}
 
-.nav > * { 
-  padding: 1rem;
+  .link-item > div { 
+    padding: 1rem;
+  }
 }
 
 .link-item { 

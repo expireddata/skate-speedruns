@@ -34,6 +34,11 @@
   },
   {
     "name": "Challenges",
-    "contentSections": []
+    "contentSections": [
+      {
+        "title": "Go meet slappy + tricks",
+        "description": "This intro section is very simple, the key is to get to slappy's park as fast as possible. You can use the speed glitch to speed up how fast you get there. It's also possible (very rarely) to skip one of the cutscenes at the top of the stairs, a consistent method of achieving this is yet to be found.\n When grabbing the dumpster, make sure you turn both sticks to the right to spin the dumpster around yourself and move your foot into the cutscene zone at the top of slappy's park.\nOn the tricks, you can start the ollie a little bit quicker if you hold a manual as you begin the challenge then pop out of it."
+      }
+    ]
   }
 ]
