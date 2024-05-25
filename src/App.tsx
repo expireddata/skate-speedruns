@@ -21,15 +21,16 @@ const NavWrapper = () => {
         <div className="logo">Skate 2 Guide</div>
         {sections.map((section) => {
           return (
-            <div
+            <Link
               className={`link-item ${
                 matchPath(getSectionPath(section), pathname)
                   ? "link-item-selected"
                   : ""
               }`}
+              to={getSectionPath(section)}
             >
-              <Link to={getSectionPath(section)}>{section.name}</Link>
-            </div>
+              <div>{section.name}</div>
+            </Link>
           );
         })}
       </div>

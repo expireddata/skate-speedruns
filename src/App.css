@@ -109,8 +109,8 @@ iframe {
   }
 
   .link-item { 
-  min-height: 3rem;
-  width: calc(10vw - 2rem);
+    min-height: 3rem;
+    width: calc(10vw - 2rem);
   }
 
   
@@ -159,7 +159,7 @@ iframe {
   font-weight: bold;
 }
 
-.link-item > a { 
+a { 
   all: unset;
 }
 
