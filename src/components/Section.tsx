@@ -16,14 +16,16 @@ const ContentSection = (
             </div>
           ))}
         </div>
-        {contentSection.videoUrl && (
-          <iframe
-            id="ytplayer"
-            width="640"
-            height="360"
-            src={contentSection.videoUrl}
-          ></iframe>
-        )}
+        <div className="video-player">
+          {contentSection.videoUrl && (
+            <iframe
+              id="ytplayer"
+              width="640"
+              height="360"
+              src={contentSection.videoUrl}
+            ></iframe>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -32,7 +34,6 @@ const ContentSection = (
 export const Section = (sectionInfo: InfoSection) => {
   return (
     <div className="section">
-      <Link to={"/"}>Back</Link>
       <h2>{sectionInfo.name}</h2>
       {sectionInfo.contentSections.map((contentSection) => (
         <ContentSection key={contentSection.title} {...contentSection} />

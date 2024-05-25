@@ -1,18 +1,55 @@
 import "./App.css";
 import { Index } from "./components/Index";
 import { Section } from "./components/Section";
-import { RouterProvider, createHashRouter } from "react-router-dom";
+import {
+  Link,
+  Outlet,
+  RouterProvider,
+  createHashRouter,
+  matchPath,
+  useLocation,
+} from "react-router-dom";
 import { getSectionPath } from "./utils";
 import sections from "./content.json";
 
+const NavWrapper = () => {
+  const { pathname } = useLocation();
+
+  return (
+    <>
+      <div className="nav">
+        <div className="logo">Skate 2 Guide</div>
+        {sections.map((section) => {
+          return (
+            <div
+              className={`link-item ${
+                matchPath(getSectionPath(section), pathname)
+                  ? "link-item-selected"
+                  : ""
+              }`}
+            >
+              <Link to={getSectionPath(section)}>{section.name}</Link>
+            </div>
+          );
+        })}
+      </div>
+      <div className="main-content">
+        <Outlet />
+      </div>
+    </>
+  );
+};
+
 const routes = [
-  ...sections.map((section) => ({
-    path: getSectionPath(section),
-    element: <Section {...section} />,
-  })),
   {
-    path: "*",
-    element: <Index sections={sections} />,
+    path: "/",
+    element: <NavWrapper />,
+    children: [
+      ...sections.map((section) => ({
+        path: getSectionPath(section),
+        element: <Section {...section} />,
+      })),
+    ],
   },
 ];
 
@@ -21,7 +58,6 @@ const router = createHashRouter(routes);
 function App() {
   return (
     <div className="App">
-      <h1>Expired Data's Skate 2 Speedrun guide</h1>
       <RouterProvider router={router} />
     </div>
   );

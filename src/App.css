@@ -5,9 +5,12 @@
   font-size: 1.4rem;
 }
 
+.main-content { 
+  margin-top: 3rem;
+}
+
 html {
   background-color: #A69080;
-  padding: 20px 10vw;
 }
 
 .section { 
@@ -19,13 +22,31 @@ html {
   margin-bottom: 1rem;
 }
 
-.content-section { 
-  width: 80vw;
+.video-player { 
+  z-index: 0;
+  position: relative;
+} 
+
+@media(max-width: 80rem) {   
+  html {    
+    padding: 0 5vw;
+  }
+
+  .video-player { 
+   display: flex;
+   justify-content: space-around;
+  }
 }
 
-@media(min-width: 70rem) {
+
+@media(min-width: 80rem) {
+  html {    
+    padding: 0 12.5vw;
+  }
+
   .paragraph { 
-    max-width: 40vw;
+    width: 35vw;
+    margin-right: 2.5vw;
   }
   .content-body {
     display: flex; 
@@ -36,6 +57,11 @@ html {
   iframe { 
     max-width: 40vw;
   }
+  
+  .content-section { 
+    width: 75vw;
+  }
+
 }
 .paragraph { 
   margin-top: 0.75rem;
@@ -59,3 +85,78 @@ iframe {
   margin: 1rem 0 2rem 0;
   border: none;
 }
+
+@media(min-width: 80rem) { 
+  .nav { 
+    height: 100vh; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    background-color: #93785B;
+    max-width: 10vw;
+    box-shadow: 0 0 15px rgba(0,0,0,0.75);
+    clip-path: inset(0px -15px 0px 0px);
+    text-align: left;
+    display: block;
+  }
+
+  .link-item { 
+  min-height: 3rem;
+  width: calc(10vw - 2rem);
+  }
+
+  
+  .logo { 
+    margin: 2vh 0 10vh 0;
+    display: block;
+  }
+
+  
+  .link-item:hover, .link-item-selected { 
+    background-color: #AC8968; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.75);
+    clip-path: inset(0px -15px 0px 0px);
+  }
+}
+
+@media(max-width: 80rem) { 
+  .nav { 
+    width: 100vw;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background-color: #93785B;
+    z-index: 999;
+    min-height: 10vh;
+  }
+
+  .logo { 
+    display: none;
+  }
+
+    
+  .link-item:hover, .link-item-selected { 
+    background-color: #AC8968; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.75);
+    clip-path: inset(-15px 0px 0px 0px);
+  }
+}
+
+.nav > * { 
+  padding: 1rem;
+}
+
+.link-item { 
+  font-weight: bold;
+}
+
+.link-item > a { 
+  all: unset;
+}
+
+.link-item:hover { 
+  cursor: pointer;
+}
+
+

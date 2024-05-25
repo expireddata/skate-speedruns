@@ -13,7 +13,7 @@
     ]
   },
   {
-    "name": "General Tips and Tricks",
+    "name": "General Tricks",
     "contentSections": [
       {
         "title": "Speed glitch",
@@ -31,5 +31,9 @@
         "videoUrl": "https://www.youtube.com/embed/psaD5m4olRs?si=_MD2xsDC-PJRXTv-&amp;clip=UgkxAwMmtYNZ37RFho74T7DtlDDyOSqXYhiV&amp;clipt=EKf9Ihis1yM"
       }
     ]
+  },
+  {
+    "name": "Challenges",
+    "contentSections": []
   }
 ]

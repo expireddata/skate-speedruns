@@ -26,7 +26,6 @@ export const ConsoleAware = ({
       acc.map((v) => v.split(new RegExp(`(?=${cur})|(?<=${cur})`))).flat(),
     [content]
   );
-  console.log(splits);
 
   return (
     <>
