@@ -70,6 +70,10 @@ html {
     width: 75vw;
   }
 
+  h3 { 
+    margin-top: 5rem;
+  }
+
 }
 .paragraph { 
   margin-top: 0.75rem;
