@@ -16,7 +16,7 @@ const routes = [
   },
 ];
 
-const router = createHashRouter(routes, { basename: "/skate-speedruns" });
+const router = createHashRouter(routes);
 
 function App() {
   return (
