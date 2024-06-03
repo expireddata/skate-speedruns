@@ -6,7 +6,10 @@ const ContentSection = (
   contentSection: InfoSection["contentSections"][number]
 ) => {
   return (
-    <div className="content-section">
+    <div
+      className="content-section"
+      id={contentSection.title.toLowerCase().replace(" ", "-")}
+    >
       <h3>{contentSection.title}</h3>
       <div className="content-body">
         <div>
