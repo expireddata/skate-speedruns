@@ -8,7 +8,10 @@ const ContentSection = (
   return (
     <div
       className="content-section"
-      id={contentSection.title.toLowerCase().replace(" ", "-")}
+      id={contentSection.title
+        .toLowerCase()
+        .replaceAll(" ", "-")
+        .replaceAll("'", "")}
     >
       <h3>{contentSection.title}</h3>
       <div className="content-body">
